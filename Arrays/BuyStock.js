@@ -30,15 +30,17 @@ Constraints:
 
 const maxProfit = (prices) => {
 
-    let maxProfit = 0
+    let maxNumber = 0
     let startingDay = prices[0]
 
     for(let i = 1; i < prices.length; i++){
+        startingDay = Math.min(prices[i], startingDay)
+        maxNumber = Math.max(maxNumber, prices[i] - startingDay )
 
     }
 
 
-    return maxProfit
+    return maxNumber
 
 }
 console.log(maxProfit([7,1,5,3,6,4]))
