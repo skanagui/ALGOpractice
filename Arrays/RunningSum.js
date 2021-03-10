@@ -30,9 +30,16 @@ Constraints:
 
 var runningSum = function(nums) {
 
-    const sumAll = []
+    //const sumAll = []
 
-    for(let i = 0; i < nums.length; i++){
+
+    for(let i = 1; i < nums.length; i++){
+
+       nums[i] = nums[i] + nums[i-1]
+
+       //current number value, is equal to the current index of number starting at positon [1] plus the previous index value 
+
+      // console.log(test)
 
 
     }
@@ -41,8 +48,15 @@ var runningSum = function(nums) {
 
 
 
-    return sumAll; 
+    return nums; 
 
 }
 
 console.log(runningSum([1,2,3,4]))
+
+/*
+var myarray = [5, 10, 3, 2];
+var new_array = [];
+myarray.reduce(function(a,b,i) { return new_array[i] = a+b; },0);
+new_array // [5, 15, 18, 20]
+*/
