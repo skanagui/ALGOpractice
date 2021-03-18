@@ -18,14 +18,23 @@ Output: 23
 */
 
 //create variable for large sum 
-// largeSum should equal beginning of the array total
+// largeSum should equal beginning of the array 
  //iterate nums array 
+ //math.Max 
 // return largeSum 
 
 
 const maxSubArray = (nums) => {
 
-    let largeSum = 0
+    let largeSum = [0]
+
+    for(i = 0; i < nums.length; i++){
+
+
+    }
+
+    return largeSum;
 
 
 }
+console.log(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
