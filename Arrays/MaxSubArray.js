@@ -26,9 +26,16 @@ Output: 23
 
 const maxSubArray = (nums) => {
 
-    let largeSum = [0]
+    let largeSum = nums[0]  // nums.length-1 (end of array)
+    //console.log(largeSum)
 
-    for(i = 0; i < nums.length; i++){
+    for(let i = 1; i < nums.length; i++){
+
+        nums[i] = Math.max(nums[i], nums[i] + nums[i-1])
+
+        largeSum = Math.max(largeSum, nums[i])
+
+        console.log('current number', nums[i])
 
 
     }
@@ -38,3 +45,5 @@ const maxSubArray = (nums) => {
 
 }
 console.log(maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
+console.log(maxSubArray([5,4,-1,7,8]))
+console.log(maxSubArray([1]))
