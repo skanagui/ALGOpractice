@@ -33,7 +33,7 @@ Only one valid answer exists.
 function twoSum(nums, target){
     const numObject = {};
      for (let i = 0; i < nums.length; i++){
-         [0, -2, 11, -7, 15], -9
+         //[0, -2, 11, -7, 15], -9
          if (numObject[target - nums[i]] >= 0){
              return [numObject[target - nums[i]], i]
          }else {
