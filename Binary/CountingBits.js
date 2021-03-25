@@ -35,3 +35,17 @@ Could you solve it in O(n) space complexity?
 Can you do it without using any built-in function (i.e., like __builtin_popcount in C++)?
 */
 
+var countBits = function(num) {
+    if (num < 0) 
+        return;
+	let result = [0];
+	for (let i = 1; i <= num; i++) {
+        console.log("line 43",[i])
+		result[i] = result[i & (i - 1)] + 1;
+
+        console.log("index", result[i])
+	}
+	return result;
+};
+
+console.log(countBits(6))
