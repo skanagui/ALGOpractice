@@ -18,26 +18,21 @@ The input must be a binary string of length 32.
 
 const hamminWeight = (n) => {
 
-    // console.log("This is n in the beginning: ",n)
+    console.log("This is n in the beginning: ",n)
    
-    // let sum = 0
+    let sum = 0
 
-    // while (n != 0){
-    //     // console.log(sum)
-    //     sum += n & 1 
-    //                //0001
-    //     n = n >>> 1 
-    //     console.log("This is the sum: ",sum)
-    //     console.log("This is n: ",n)
-    // }
-    // return sum
-
-    let bits = 0 
-    let mask = 1 
-
-    for (let i =0){
-
+    while (n != 0){
+        // console.log(sum)
+        sum += n & 1 
+                   //0001
+        n = n >>> 1 
+        console.log("This is the sum: ",sum)
+        console.log("This is n: ",n)
     }
+    return sum
+
+  
 
 }
 
