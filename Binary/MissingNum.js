@@ -30,17 +30,28 @@ Explanation: n = 1 since there is 1 number, so all numbers are in the range [0,1
 */
 
 const missingNumber = (nums) => {
+    let sort = nums.sort()
 
-    let missingNumber = 0
+    //let missingNumber = 0
 
-    for(let i = 0; i <= nums.length; i++)
-    console.log(i)
+    for(let i = 0; i <= nums.length; i++){
 
+        console.log("this is the num at this index", nums[i])
+        console.log("this is the index", i)
+
+        if  (nums[i] !== i){
+            return i
+        }
+    }
     
 
-    //return missingNumber;
+
+
+    return missingNumber;
 
 
 
 }
 console.log(missingNumber([3,0,1]))
+console.log(missingNumber([9,6,4,2,3,5,7,0,1]))
+console.log(missingNumber([0]))
