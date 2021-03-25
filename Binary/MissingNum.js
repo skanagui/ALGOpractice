@@ -31,7 +31,16 @@ Explanation: n = 1 since there is 1 number, so all numbers are in the range [0,1
 
 const missingNumber = (nums) => {
 
+    let missingNumber = 0
+
+    for(let i = 0; i <= nums.length; i++)
+    console.log(i)
+
     
+
+    //return missingNumber;
+
+
 
 }
 console.log(missingNumber([3,0,1]))
