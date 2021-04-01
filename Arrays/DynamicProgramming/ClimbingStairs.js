@@ -23,9 +23,13 @@ Explanation: There are three ways to climb to the top.
 */
 
 
-var climbStairs = function(n){
-    let answer = 1
-    for (let i = 1; i <= n; i++){
-        
+let seen = {};
+var climbStairs = function(n) {
+    if(n < 3) return n;
+    if(!(n in seen)) {
+        seen[n] = climbStairs(n-1) + climbStairs(n-2);
     }
-}
+    return seen[n];
+};
+
+console.log(climbStairs(5))
