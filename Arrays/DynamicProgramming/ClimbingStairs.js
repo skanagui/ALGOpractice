@@ -21,3 +21,11 @@ Explanation: There are three ways to climb to the top.
 2. 1 step + 2 steps
 3. 2 steps + 1 step
 */
+
+
+var climbStairs = function(n){
+    let answer = 1
+    for (let i = 1; i <= n; i++){
+        
+    }
+}
