@@ -31,6 +31,14 @@ Output: 2
 */
 
 const coinChange =(coins, change) => {
+// least amount of coins used
+//var that tracks least amount of coins
+// iterate over coins array to check each element equal to target 
+// create conditional to return -1 if if value doesnt exist at exact amount 
+// return the number of coin ( var created at beginning )
 
-    
+
+// [2, 3, 4]
+
+
 }
