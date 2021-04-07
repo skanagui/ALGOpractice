@@ -27,11 +27,18 @@ var climbStairs = function(n) {
     let prev = 0;
     let cur = 1;
     let temp;
-    
+    //console.log(temp)
     for (let i = 0; i < n; i++) {
-        temp = prev;
+        temp = prev;   //0,1,2,3,4
         prev = cur;
+        console.log(cur)
         cur += temp; 
+        console.log("temp", temp)
+        console.log("prev", prev)
+        console.log("cur 38 after", cur)
+        
     }
-    return cur;
+    
+    //return cur;
 };
+console.log(climbStairs(5))
