@@ -46,7 +46,7 @@ const isPalimdrome =(num) => {
 
 }
 
-console.log("this one",isPalimdrome(1000000000000000001))
+console.log("this one",isPalimdrome(100000000001)
 console.log("321 num",isPalimdrome(123))
 
 
