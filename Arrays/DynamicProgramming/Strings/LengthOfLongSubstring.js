@@ -24,11 +24,20 @@ Output: 0
 
 const lengthOfLongestSubstring = (characters) => {
 
+    let substringLength = 0
+
+    let newString = "" 
+
 
 
 
     for (let char of characters){
         console.log("this is char:", char)
+
+        if(){
+            newString += char
+
+        }
     }
     // create an empty string variable 
     //create variable that represents length of substring = 0
