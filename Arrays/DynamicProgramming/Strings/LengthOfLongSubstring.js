@@ -22,32 +22,57 @@ Input: s = ""
 Output: 0
 */
 
-const lengthOfLongestSubstring = (characters) => {
+// const lengthOfLongestSubstring = (characters) => {
 
-    let substringLength = 0
+//     let substringLength = 0
 
-    let newString = "" 
+//     let newString = "" 
+
+//     let currentCharacter = ""
 
 
 
 
-    for (let char of characters){
-        console.log("this is char:", char)
+//     for (let char of characters){
+        
 
-        if(){
-            newString += char
+//         if(currentCharacter !== char){
+//             newString += char
 
+//         }
+//         console.log("newString:", newString)
+//         console.log("char:", char)
+//        return newString.includes(char) ? newString.length : "stop"
+//     }
+//     create an empty string variable 
+//     create variable that represents length of substring = 0
+//     iterate over the string
+//         find and hold non repeating characters 
+//         place non repeating chars inside empty string
+//     return substring length as output 
+//     if "" return 0 
+
+
+// }
+
+// console.log(lengthOfLongestSubstring("abcabcbb"))
+
+var lengthOfLongestSubstring = function(s) {
+    let longest = 0;
+    let current = "";
+    console.log("before current", current)
+    for (let i = 0; i < s.length; i++) {
+        current = current.substring(current.indexOf(s[i]) + 1)        // argument (x-->)
+        console.log("string index", s[i])
+        console.log("during:", current)
+        current += s[i];
+        console.log("current index of ", current.indexOf(s[i]) + 1)
+        console.log("after:", current)
+        if (current.length > longest) {
+            longest = current.length;
         }
     }
-    // create an empty string variable 
-    //create variable that represents length of substring = 0
-    //iterate over the string
-        //find and hold non repeating characters 
-        //place non repeating chars inside empty string
-    //return substring length as output 
-    // if "" return 0 
-
-
-}
-
-console.log(lengthOfLongestSubstring("abcabcbb"))
+    
+    return longest;
+};
+console.log(lengthOfLongestSubstring("abac"))
