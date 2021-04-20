@@ -39,7 +39,7 @@ We print the sum of the array's elements: 1 2 3 4 10 11 = 31
 
 const ArraySum = (array)=> {
 
-    sum = 0
+   let sum = 0
 
     //iterate over array += 
     //return new sum 
@@ -61,4 +61,4 @@ const ArraySum = (array)=> {
 
 
 }
-console.log(ArraySum([1,2,3,4,10,11]))
+console.log(ArraySum([338,65, 713, 595, 428, 610 ,728 ,573 ,871 ,868]))
