@@ -20,10 +20,13 @@ const minCostClimbingStairs = (cost) =>{
 
     //create variable that reps the min cost
     let minCost = 0
-    
+
 
     //iterate over array 
         // create variable that represents min value between index cost[0],cost[1]
+
+        //almost had it 
+        
 
 
 
