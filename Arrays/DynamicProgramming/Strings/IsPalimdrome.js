@@ -35,4 +35,4 @@ const isPalindrome = (s) => {
 
 
 
-console.log(isPalimdrome("A man, a plan, a canal: Panama"))
+console.log(isPalindrome("A man, a plan, a canal: Panama"))
