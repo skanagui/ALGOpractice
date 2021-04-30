@@ -33,6 +33,8 @@ const isPalindrome = (s) => {
     return newOriginalString === reversedString ? true : false
 };
 
+//good use of built in methods not the best solution 
+
 
 
 console.log(isPalindrome("A man, a plan, a canal: Panama"))
