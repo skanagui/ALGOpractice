@@ -25,10 +25,34 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13"
 
 const fizzBuzz = (n) =>{
 
+    let newArray = []
+
+    for (let i = 1; i <= n; i++){
+
+        console.log("n", n)
+        console.log("i", i)
+
+        if (i % 3 === 0){
+            newArray.push("Fizz")
+            
+        }else if (i % 5 === 0){
+            newArray.push("Buzz")
+            
+        }else if (i % 3 === 0 && i % 5 === 0){
+            
+            newArray.push("FizzBuzz")
+        }else{
+            console.log(i)
+            newArray.push(i.toString())
+        }
+    }
+
+    return newArray;
+
 
 }
 
-console.log(fizzBuzz())
+console.log(fizzBuzz(10))
 
 
 
