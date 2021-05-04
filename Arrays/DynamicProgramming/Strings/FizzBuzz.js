@@ -32,17 +32,17 @@ const fizzBuzz = (n) =>{
         console.log("n", n)
         console.log("i", i)
 
-        if (i % 3 === 0){
-            newArray.push("Fizz")
+        if (i % 3 === 0 && i % 5 === 0) {
+            newArray.push("FizzBuzz")
             
         }else if (i % 5 === 0){
             newArray.push("Buzz")
             
-        }else if (i % 3 === 0 && i % 5 === 0){
+        }else if ((i % 3 === 0)){
             
-            newArray.push("FizzBuzz")
+            newArray.push("Fizz")
         }else{
-            console.log(i)
+        
             newArray.push(i.toString())
         }
     }
@@ -52,7 +52,7 @@ const fizzBuzz = (n) =>{
 
 }
 
-console.log(fizzBuzz(10))
+console.log(fizzBuzz(15))
 
 
 
