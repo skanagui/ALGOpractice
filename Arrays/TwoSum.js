@@ -39,6 +39,7 @@ function twoSum(nums, target){
          }else {
              numObject[nums[i]] = i
              // numObject[target - nums[i]] = i
+             //lsdjflsdjflsdjf nuim 
          }
      }
  }

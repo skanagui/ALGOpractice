@@ -60,5 +60,5 @@ var checkIfPangram = function(sentence) {
 };
 
 
-console.log(isPangram("abcdefghijklmnopqrstuvwxyz"))
-console.log(isPangram("thequickbrownfoxjumpsoverthelazydog"))
+console.log(checkIfPangram("abcdefghijklmnopqrstuvwxyz"))
+console.log(checkIfPangram("thequickbrownfoxjumg"))

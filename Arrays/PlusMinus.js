@@ -73,13 +73,9 @@ const PlusMinus = (arr) => {
     }
             
 
-
-    let negCount = neg.length/n 
-    let posCount = pos.length/n
-    let zerCount = zer.length/n 
-    console.log("neg", negCount)
-    console.log("pos", posCount)
-    console.log("zer", zerCount)
+    console.log("neg", neg.length/n)
+    console.log("pos", pos.length/n)
+    console.log("zer", zer.length/n )
 
 
 

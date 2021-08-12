@@ -6,6 +6,7 @@ You can either start from the step with index 0, or the step with index 1.
 Return the minimum cost to reach the top of the floor.
 Example 1:
 Input: cost = [10,15,20]
+[5, 7, 3, 10]
 Output: 15
 Explanation: Cheapest is: start on cost[1], pay that cost, and go to the top.
 Example 2:
@@ -26,7 +27,7 @@ const minCostClimbingStairs = (cost) =>{
         // create variable that represents min value between index cost[0],cost[1]
 
         //almost had it 
-        
+
 
 
 
